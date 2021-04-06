@@ -73,10 +73,10 @@ jQuery(document).ready(function($) {
 jQuery(document).ready(function($) {
     jQuery(".desktop-sidebar-option").click(function() {
         jQuery(this).toggleClass('desktop-sidebar-option--open');
-        jQuery(".shirtwolesaler-blog-detail__left").toggleClass('shirtwolesaler-blog-detail__left--sidebar-active');
-        jQuery(".shirtwolesaler-blog-detail__right").toggleClass('shirtwolesaler-blog-detail__right--sidebar-active');
-        jQuery(".archive-shirtwolesaler__left").toggleClass('archive-shirtwolesaler__left--sidebar-active');
-        jQuery(".archive-shirtwolesaler__right").toggleClass('archive-shirtwolesaler__right--sidebar-active');
+        jQuery(".shirtchamp-blog-detail__left").toggleClass('shirtchamp-blog-detail__left--sidebar-active');
+        jQuery(".shirtchamp-blog-detail__right").toggleClass('shirtchamp-blog-detail__right--sidebar-active');
+        jQuery(".archive-shirtchamp__left").toggleClass('archive-shirtchamp__left--sidebar-active');
+        jQuery(".archive-shirtchamp__right").toggleClass('archive-shirtchamp__right--sidebar-active');
     });
 });
 
