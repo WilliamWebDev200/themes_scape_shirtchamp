@@ -11,8 +11,8 @@ if ( !empty($layout_js_styles) ) {
 }
 ?>
 
-	<div id="container" class="row-inner archive-shirtwolesaler <?php echo (is_active_sidebar($wtbx_layout['sidebar_widgetarea']) || $wtbx_layout['sidebar'] === 'no_sidebar' ? esc_attr($wtbx_layout['sidebar']) : '') .  $wtbx_layout['fullwidth']; ?>">
-		<div id="content" class="archive-shirtwolesaler__left <?php echo esc_attr($wtbx_layout['side_padding']); ?>">
+	<div id="container" class="row-inner archive-shirtchamp <?php echo (is_active_sidebar($wtbx_layout['sidebar_widgetarea']) || $wtbx_layout['sidebar'] === 'no_sidebar' ? esc_attr($wtbx_layout['sidebar']) : '') .  $wtbx_layout['fullwidth']; ?>">
+		<div id="content" class="archive-shirtchamp__left <?php echo esc_attr($wtbx_layout['side_padding']); ?>">
 			<?php
 			$post_type = get_post_type(wtbx_get_the_id());
 
@@ -49,7 +49,7 @@ if ( !empty($layout_js_styles) ) {
 					$excerpt_length = '';
 					?>
 
-                    <div class="wtbx_blog_grid_wrapper blog-default archive-shirtwolesaler__wrapper">
+                    <div class="wtbx_blog_grid_wrapper blog-default archive-shirtchamp__wrapper">
                         <div class="wtbx-grid-wrapper">
                             <div class="blog-grid wtbx-grid wtbx-grid-default wtbx-container-reveal wtbx-lightbox-container row-inner clearfix" data-grid="blog">
 
@@ -106,7 +106,7 @@ if ( !empty($layout_js_styles) ) {
 
 		<?php if ( in_array( $wtbx_layout['sidebar'], array('sidebar_left', 'sidebar_left_sticky', 'sidebar_right', 'sidebar_right_sticky') ) && $wtbx_layout['sidebar_widgetarea'] !== 'none' && is_active_sidebar($wtbx_layout['sidebar_widgetarea']) )  : ?>
 
-            <div id="sidebar" class="archive-shirtwolesaler__right <?php echo esc_attr($wtbx_layout['sidebar_skin']), esc_attr($wtbx_layout['sidebar_sticky']); ?>">
+            <div id="sidebar" class="archive-shirtchamp__right <?php echo esc_attr($wtbx_layout['sidebar_skin']), esc_attr($wtbx_layout['sidebar_sticky']); ?>">
 				<div class="page-sidebar">
 					<div class="widget-area">
 						<?php dynamic_sidebar($wtbx_layout['sidebar_widgetarea']); ?>

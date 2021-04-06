@@ -13,11 +13,11 @@ if ( !empty($layout_js_styles) ) {
 
 <?php include(locate_template('templates/section-pagination-single-top.php')); ?>
 
-<article class="shirtwolesaler-blog-detail" itemscope itemtype="http://schema.org/Article" id="post-<?php the_ID(); ?>" <?php post_class(get_post_type().'-entry clearfix'); ?>>
-	<div id="container" class="shirtwolesaler-blog-detail__container row-inner <?php echo (is_active_sidebar($wtbx_layout['sidebar_widgetarea']) || $wtbx_layout['sidebar'] === 'no_sidebar' ? esc_attr($wtbx_layout['sidebar']) : '') .  $wtbx_layout['fullwidth']; ?>">
+<article class="shirtchamp-blog-detail" itemscope itemtype="http://schema.org/Article" id="post-<?php the_ID(); ?>" <?php post_class(get_post_type().'-entry clearfix'); ?>>
+	<div id="container" class="shirtchamp-blog-detail__container row-inner <?php echo (is_active_sidebar($wtbx_layout['sidebar_widgetarea']) || $wtbx_layout['sidebar'] === 'no_sidebar' ? esc_attr($wtbx_layout['sidebar']) : '') .  $wtbx_layout['fullwidth']; ?>">
 
-        <div class="wtbx-content-body shirtwolesaler-blog-detail__block wtbx-<?php echo get_post_type(); ?>-body clearfix">
-            <div id="content" class="shirtwolesaler-blog-detail__left shirtwolesaler-blog-detail__item">
+        <div class="wtbx-content-body shirtchamp-blog-detail__block wtbx-<?php echo get_post_type(); ?>-body clearfix">
+            <div id="content" class="shirtchamp-blog-detail__left shirtchamp-blog-detail__item">
 
                 <?php while ( have_posts() ) : the_post(); ?>
 
@@ -39,7 +39,7 @@ if ( !empty($layout_js_styles) ) {
 
             <?php if ( in_array( $wtbx_layout['sidebar'], array('sidebar_left', 'sidebar_left_sticky', 'sidebar_right', 'sidebar_right_sticky') ) && $wtbx_layout['sidebar_widgetarea'] !== 'none' && is_active_sidebar($wtbx_layout['sidebar_widgetarea']) )  : ?>
 
-                <div id="sidebar" class="shirtwolesaler-blog-detail__right shirtwolesaler-blog-detail__item" <?php echo esc_attr($wtbx_layout['sidebar_skin']), esc_attr($wtbx_layout['sidebar_sticky']); ?>">
+                <div id="sidebar" class="shirtchamp-blog-detail__right shirtchamp-blog-detail__item" <?php echo esc_attr($wtbx_layout['sidebar_skin']), esc_attr($wtbx_layout['sidebar_sticky']); ?>">
                     <div class="page-sidebar">
                         <div class="widget-area">
                             <?php dynamic_sidebar($wtbx_layout['sidebar_widgetarea']); ?>
@@ -52,7 +52,7 @@ if ( !empty($layout_js_styles) ) {
 
             <!-- <div class="wtbx-width wtbx-large-7 wtbx-medium-8 wtbx-small-9"> -->
             <div class="wtbx-width wtbx-large-12 wtbx-medium-12 wtbx-small-12">
-                <div class="shirtwolesaler-blog-detail__next-prev">
+                <div class="shirtchamp-blog-detail__next-prev">
                     <?php
                 include(locate_template('templates/section-pagination-single-bottom.php')); ?>
                 </div>
@@ -82,7 +82,7 @@ if ( wtbx_option('post-related-enable') && get_post_type() === 'post' ) {
 }
 // Comments
 if ( ( comments_open() || get_comments_number() ) && wtbx_option('post-comments') === '1' ) : ?>
-    <div class="row-inner shirtwolesaler-blog-detail__comment">
+    <div class="row-inner shirtchamp-blog-detail__comment">
         <div class="wtbx-width wtbx-large-7 wtbx-medium-8 wtbx-small-9">
             <?php comments_template(); ?>
         </div>
