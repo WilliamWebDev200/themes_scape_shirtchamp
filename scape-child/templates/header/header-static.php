@@ -14,7 +14,7 @@ $link_url = 'https://www.shirtchamp.com';
         <button><i class="fa fa-bars " aria-hidden="true "></i></button>
         </div>
         <div class="logo ">
-        <a href="<?php echo $link_url; ?>" data-href="https://www.alphabroder.com " id="header-anchor ">
+        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" id="header-anchor ">
         <img src="https://www.shirtchamp.com/public/_front/assets/images/logo2.png " class="logo-pc " width="155 " height="60 " alt="ShirtChamp
                                     logo ">
         <img src="https://www.shirtchamp.com/public/_front/assets/images/logo2-compact.png " class="logo-sp " width="155 " height="60
