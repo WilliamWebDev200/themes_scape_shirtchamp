@@ -20,9 +20,10 @@ Skype: williamcarrascajr
 //CHANGE THIS COLORS
 $color1: #fff;
 //TAB COLORS
-$color2: #202938;
+$color2: #365177;
+$color-navy:#1f2937;
 //HOVER TEXT COLOR
-$color2-ext: #d40500;
+$color2-ext: #cc0000;
 //BACKGROUND OVERLAY COLOR
 $transparent:rgba(0, 0, 0, .9);
 //ERROR BACKGROUND
@@ -102,7 +103,7 @@ body.login {
         background: $logo;
         margin-bottom: 30px;
         background-size: contain;
-        background-color: #fff;
+        background-color: $color-navy;
         border-radius: 100px;
         a {
             display: none;
@@ -126,7 +127,7 @@ body.login {
         input[type="password"] {
             @include reset-all;
             border-bottom: 3px solid $color1;
-            color: #color1;
+            color: $color2-ext;
             text-align: center;
             padding-bottom: 5px;
             color: $color2;
