@@ -514,6 +514,11 @@ div#main {
                     flex: 0 0 50% !important;
                     max-width: 50% !important;
                     clear: none !important;
+                    a {
+                        &:hover {
+                            color: $color-red !important;
+                        }
+                    }
                 }
             }
         }
@@ -531,6 +536,11 @@ div#main {
                     flex: 0 0 50% !important;
                     max-width: 50% !important;
                     clear: none !important;
+                    a {
+                        &:hover {
+                            color: $color-red !important;
+                        }
+                    }
                 }
             }
         }
@@ -548,6 +558,7 @@ div#main {
                         display: flex;
                         justify-content: space-between;
                         padding: 10px 0;
+                        pointer-events: none;
                     }
                 }
             }
@@ -663,6 +674,11 @@ div#main {
             p {
                 line-height: 22px;
             }
+            a {
+                &:hover {
+                    color: $color-red !important;
+                }
+            }
         }
         &--chat {
             text-align: left;
@@ -674,6 +690,9 @@ div#main {
             }
             a {
                 color: $color-white;
+                &:hover {
+                    color: $color-red !important;
+                }
             }
         }
         &--message {
