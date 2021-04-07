@@ -484,6 +484,9 @@ div#main {
             margin-bottom: 15px;
         }
     }
+    &__bottom {
+        border-top: 1px solid $color-dark;
+    }
     &__links {
         ul {
             li {
@@ -539,7 +542,7 @@ div#main {
             }
             .menu {
                 li {
-                    border-bottom: 1px solid $color-gray3;
+                    border-bottom: 1px solid $color-dark;
                     margin-bottom: 15px;
                     a {
                         display: flex;
