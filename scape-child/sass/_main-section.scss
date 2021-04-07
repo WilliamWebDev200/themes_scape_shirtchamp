@@ -61,10 +61,21 @@ div#main {
                 display: none;
             }
         }
+        @media only screen and (max-width:341px) {
+            .thumbnails-box__item {
+                .wtbx_vc_text_element {
+                    flex: 0 0 60% !important;
+                    max-width: 60% !important;
+                }
+            }
+        }
     }
     .header-content-block {
         padding: 15px 0 !important;
         padding-bottom: 5px !important;
+        @media only screen and (max-width: 768px) {
+            padding-top: 0 !important;
+        }
         &__left {
             * {
                 padding: 0 !important;
@@ -475,6 +486,9 @@ div#main {
     background: $color-secondary;
     color: $color-white;
     padding-top: 50px;
+    @media only screen and (max-width: 1000px) {
+        padding-bottom: 50px;
+    }
     .wtbx_row_content.clearfix {
         max-width: 95%;
         @media only screen and (max-width: 600px) {
@@ -739,6 +753,12 @@ div#main {
             .wtbx_text_element_inner {
                 p {
                     text-align: left !important;
+                }
+            }
+            .wtbx_display_block {
+                p {
+                    margin: 0;
+                    text-align: center !important;
                 }
             }
         }
