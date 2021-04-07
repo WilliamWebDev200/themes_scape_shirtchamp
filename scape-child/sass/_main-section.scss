@@ -563,8 +563,11 @@ div#main {
         }
         .wtbx_vc_social_icons {
             margin-right: 5px;
+            a {
+                background: transparent !important;
+            }
             i {
-                color: $color-secondary !important;
+                color: $color-white !important;
             }
         }
     }

@@ -1,5 +1,7 @@
 <?php
 $header_style = wtbx_option_levelled('header-style');
+$link_url = 'https://www.shirtchamp.com';
+
 if ( !empty(wtbx_option_sub('h'.$header_style.'-mobile-breakpoint', 'width')) || !empty(wtbx_option_sub('h'.$header_style.'-mobile-breakpoint', 'height')) ) {
     $header_style = 'm';
     $sections   = wtbx_option_sub('h'.$header_style.'-builder', 'value');
@@ -8,6 +10,9 @@ if ( !empty(wtbx_option_sub('h'.$header_style.'-mobile-breakpoint', 'width')) ||
     if ( empty($header_design) ) { $header_design = 'default'; }
     ?>
 
+
+
+
     <div class="wtbx_mobile_backdrop"></div>
     <nav id="mobile-header" class="header-mobile-side wtbx_skin_<?php echo esc_attr(wtbx_option('hm-side-skin')); ?> wtbx_design_<?php echo esc_attr($header_design); ?>" data-width="<?php echo esc_attr(wtbx_option('hm-s-width')); ?>">
         <div class="mobile-nav-wrapper">
@@ -15,7 +20,7 @@ if ( !empty(wtbx_option_sub('h'.$header_style.'-mobile-breakpoint', 'width')) ||
                 <div class="wtbx_mobile_close"></div>
 
                     <div class="mobile-icons">
-                        <a href="<?php echo $link_url ; ?>login" class="btn btn--icon">
+                        <a href="<?php echo $link_url ; ?>/login" class="btn btn--icon">
                         <span class="icon">
                         <svg width="26" height="30" viewBox="0 0 26 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M17.8684 17.5244C16.2331 17.5244 15.4468 18.4468 12.7632 18.4468C10.0795 18.4468 9.29887 17.5244 7.6579 17.5244C3.4301 17.5244 0 20.9947 0 25.2721V26.7478C0 28.2754 1.22504 29.5148 2.73496 29.5148H22.7914C24.3013 29.5148 25.5263 28.2754 25.5263 26.7478V25.2721C25.5263 20.9947 22.0962 17.5244 17.8684 17.5244ZM22.7914 26.7478H2.73496V25.2721C2.73496 22.5281 4.94572 20.2914 7.6579 20.2914C8.48978 20.2914 9.84017 21.2138 12.7632 21.2138C15.7089 21.2138 17.0308 20.2914 17.8684 20.2914C20.5806 20.2914 22.7914 22.5281 22.7914 25.2721V26.7478ZM12.7632 16.6021C17.2929 16.6021 20.9681 12.8839 20.9681 8.30104C20.9681 3.71817 17.2929 0 12.7632 0C8.23338 0 4.55827 3.71817 4.55827 8.30104C4.55827 12.8839 8.23338 16.6021 12.7632 16.6021ZM12.7632 2.76701C15.7773 2.76701 18.2331 5.25156 18.2331 8.30104C18.2331 11.3505 15.7773 13.8351 12.7632 13.8351C9.749 13.8351 7.29324 11.3505 7.29324 8.30104C7.29324 5.25156 9.749 2.76701 12.7632 2.76701Z" fill="#6B6B6B"></path>
