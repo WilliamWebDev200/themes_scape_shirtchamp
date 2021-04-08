@@ -492,6 +492,13 @@ div#main {
                         position: relative;
                     }
                 }
+                @media only screen and (max-width:1920px) and (min-width:1440px) {
+                    &:first-child {
+                        a {
+                            padding-left: 0;
+                        }
+                    }
+                }
             }
         }
     }
