@@ -70,6 +70,11 @@ div#main {
             }
         }
     }
+    @media only screen and (max-width:1400px) {
+        .content_block {
+            padding: 0 10px;
+        }
+    }
     .header-content-block {
         padding: 15px 0 !important;
         padding-bottom: 5px !important;
@@ -332,6 +337,10 @@ div#main {
                 align-items: center;
                 display: flex;
                 color: $color-white;
+                @media only screen and (max-width: 1024px) {
+                    flex: 0 0 60%;
+                    max-width: 60%;
+                }
                 .wtbx_text_element_inner {
                     line-height: 15px;
                     font-size: 12px;
@@ -461,6 +470,12 @@ div#main {
                     font-family: $font-primary;
                     text-transform: uppercase;
                     font-size: 12px;
+                    @media only screen and (max-width: 1150px) {
+                        padding: 15px 10px;
+                    }
+                    @media only screen and (max-width: 1024px) {
+                        padding: 15px 5px;
+                    }
                     &:hover {
                         color: $color-red;
                     }
